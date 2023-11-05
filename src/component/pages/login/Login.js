@@ -121,7 +121,7 @@ function Login() {
               value={loginformData.email}
               placeholder="Your email"
               onChange={handleloginChange}
-              className="w-full rounded-sm my-2 h-12"
+              className="w-full rounded-sm my-2 h-12 border"
               required
             />
 
@@ -132,7 +132,7 @@ function Login() {
               value={loginformData.password}
               placeholder="Your password"
               onChange={handleloginChange}
-              className="w-full  border-black rounded-sm my-2 h-12"
+              className="w-full  rounded-sm my-2 h-12 border"
               required
             />
 
