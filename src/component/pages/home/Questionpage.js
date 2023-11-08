@@ -35,7 +35,7 @@ function Homepage() {
     };
 
     getAllQuestions();
-  }, []);
+  }, [navigate]);
 
 // console.log(questions)
 
