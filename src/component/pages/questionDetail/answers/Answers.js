@@ -46,7 +46,7 @@ function Answers() {
           answers.map((item, i) => (
             <div className="border-b-2 my-2 flex items-center" key={i}>
               <div>
-                <img className="w-24 " src={avator} />
+                <img className="w-24 " src={avator} alt="human avator"/>
                 <p>{item.username}</p>
               </div>
               <div className="mx-6">

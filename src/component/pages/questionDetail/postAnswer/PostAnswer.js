@@ -8,7 +8,7 @@ function PostAnswer() {
   const [answer, setAnswer] = useState("");
   const question_id = questionData.question_id;
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const {  value } = e.target;
     setAnswer(value);
   };
   const navigate = useNavigate();

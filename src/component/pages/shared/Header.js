@@ -21,7 +21,7 @@ export default function Header() {
     <div className=" shadow-md">
       <div className=" w-3/4 flex justify-around text-center items-center m-auto p-4">
         <div className="flex p-1">
-          <img src={logo} />
+          <img src={logo} alt="evangadi logo"/>
         </div>
         <div className="flex justify-around ">
           <Link to={"/all-questions"}>

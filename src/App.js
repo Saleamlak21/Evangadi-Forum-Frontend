@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./component/pages/shared/Header";
 import LoginPage from "./component/pages/login/LoginPage";
 import { Routes, Route } from "react-router-dom";
 import Shared from "./component/pages/shared/shared";

@@ -6,7 +6,7 @@ import { useStateValue } from "../../../context/stateProvider";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 function Homepage() {
-  const [{ username,  questionData }, dispatch] = useStateValue();
+  const [{ username }, dispatch] = useStateValue();
   const [questions, setQuestions] = useState([]);
 
   const navigate = useNavigate();
@@ -69,7 +69,7 @@ function Homepage() {
                 >
                   <div className=" flex items-center">
                     <div className="text-center">
-                      <img className="w-24 mx-auto" src={avator} />
+                      <img className="w-24 mx-auto" src={avator} alt="human avator"/>
 
                       <p className=" -mt-4 mb-6">{items.username}</p>
                     </div>

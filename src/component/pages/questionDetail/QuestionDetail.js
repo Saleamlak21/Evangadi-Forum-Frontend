@@ -5,7 +5,7 @@ import Answers from "./answers/Answers";
 import PostAnswer from "./postAnswer/PostAnswer";
 
 function QuestionDetail() {
-  const [{ username, questionData,postAnswerSuccess }, dispatch] = useStateValue();
+  const [{questionData,postAnswerSuccess }] = useStateValue();
   const [detail, setDetail] = useState();
   const [isLoading, setIsLoading] = useState(true); 
 

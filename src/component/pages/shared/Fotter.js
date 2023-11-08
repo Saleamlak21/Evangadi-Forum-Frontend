@@ -10,7 +10,7 @@ function Fotter() {
       <div className="w-9/12 flex justify-between m-auto py-6">
         <div >
           <div>
-            <img color="white" src={logo} />
+            <img color="white" src={logo} alt="evangadi logo"/>
           </div>
           <div>
             <FacebookIcon />
