@@ -4,7 +4,7 @@ import { Link,  useNavigate } from "react-router-dom";
 import { useStateValue } from "../../../context/stateProvider";
 
 export default function Header() {
-    const [{username,user_id}, dispatch] = useStateValue()
+    const [{user_id}, dispatch] = useStateValue()
     const navigate = useNavigate()
 
     const handleSignOut = () => {

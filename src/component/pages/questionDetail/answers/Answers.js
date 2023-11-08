@@ -6,7 +6,7 @@ import avator from "../../../../asset/2263539.png";
 function Answers() {
   const [answers, setAnswers] = useState([]);
 //   const [updater, setUpdater] = useState(0);
-  const [{ questionData ,postAnswerSuccess}, dispatch] = useStateValue();
+  const [{ questionData ,postAnswerSuccess}] = useStateValue();
   const [isLoading, setIsLoading] = useState(true);
   //   console.log(questionData.question_id)
   useEffect(() => {
@@ -34,7 +34,7 @@ function Answers() {
       }
     };
     getAnswer();
-  }, [postAnswerSuccess]); // i need this part update when answer change?
+  }, [postAnswerSuccess, questionData.question_id]); // i need this part update when answer change?
 //   console.log(updater);
 
   return (

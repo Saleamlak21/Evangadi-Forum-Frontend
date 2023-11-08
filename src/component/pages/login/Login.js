@@ -1,10 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "../../axios";
 import React, { useState } from "react";
 import { useStateValue } from "../../../context/stateProvider";
 
 function Login() {
-  const [{ onOff, user }, dispatch] = useStateValue();
+  const [{ onOff}, dispatch] = useStateValue();
   // console.log(user)
   const navigate = useNavigate();
 
@@ -231,7 +231,7 @@ function Login() {
             {registrationError && (
               <p className="text-red-600 mb-4">{registrationError}</p>
             )}
-            <span className="text-sm font-thin ">I agree to the <a className=" text-orange-400">privacy policy</a> and <a className=" text-orange-400">terms of service</a>.</span>
+            <span className="text-sm font-thin ">I agree to the <p className=" text-orange-400">privacy policy</p> and <p className=" text-orange-400">terms of service</p>.</span>
             <button
               type="submit"
               className="w-full border-0 rounded-md my-2 h-12 bg-blue-700 text-white hover:bg-orange-500 active:bg-orange-500"

@@ -34,7 +34,7 @@ function QuestionDetail() {
       }
     };
     questionDetail();
-  }, [postAnswerSuccess]); 
+  }, [postAnswerSuccess,questionData.question_id]); 
 
   console.log(detail);
   return (
